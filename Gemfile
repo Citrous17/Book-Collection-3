@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.0.2"
+ruby "3.3.6"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0', '>= 6.1.4.1'
@@ -51,7 +51,6 @@ gem "rexml"
 
 # Added these because of docs
 gem 'sass-rails', '>= 6'
-gem 'webpacker', '~> 5.0'
 gem 'turbolinks', '~> 5'
 # gem 'redis', '~> 4.0'
 # gem 'bcrypt', '~> 3.1.7'
@@ -84,3 +83,7 @@ group :test do
 end
 
 gem 'concurrent-ruby', '1.3.4' 
+
+gem "jsbundling-rails", "~> 1.3"
+
+gem "cssbundling-rails", "~> 1.4"
