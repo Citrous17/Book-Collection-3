@@ -1,0 +1,1 @@
+web: bin/webpack --mode production && ruby server.rb
