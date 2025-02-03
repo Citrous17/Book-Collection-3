@@ -1,1 +1,2 @@
-web: bin/webpack --mode production && ruby server.rb
+web: bundle exec rails server
+postdeploy: gem install bundler && bundle install && npm run build

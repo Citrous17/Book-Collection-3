@@ -19,7 +19,6 @@
     "webpack-dev-server": "^3"
   },
   "scripts": {
-    "heroku-postbuild": "gem install bundler && bundle install",
     "build": "bin/webpack --mode production"
   }
 }
