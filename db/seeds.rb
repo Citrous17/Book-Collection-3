@@ -9,7 +9,7 @@
 Book.create!([
     { title: "The Great Gatsby"},
     { title: "To Kill a Mockingbird"},
-    { title: "1984", author: "George Orwell"},
+    { title: "1984"},
     { title: "Pride and Prejudice" },
     { title: "The Catcher in the Rye"},
     { title: "The Hobbit"},
