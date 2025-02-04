@@ -17,7 +17,7 @@
 
   <% @user_books.each do |user_book| %>
     <tr>
-      <td><%= User.whre(id: user_book.user_id).last.username %></td>
+      <td><%= User.where(id: user_book.user_id).last.username %></td>
       <td><%= Book.where(id: user_book.book_id).last.title %></td>
       <td><%= link_to 'Show', user_book %></td>
       <td><%= link_to 'Edit', edit_user_book_path(user_book) %></td>
@@ -27,7 +27,7 @@
   </tbody>
 </table>
 
-<%= link_to 'New USer Book', new_user_book_path %>
+<%= link_to 'New User Book', new_user_book_path %>
 
 <br>
 
