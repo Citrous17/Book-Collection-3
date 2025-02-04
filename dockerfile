@@ -5,7 +5,7 @@ FROM ruby:3.3.6
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Install PostgreSQL client (needed for Rails apps using PostgreSQL)
-RUN apt-get update && apt-get install -y postgresql-client
+RUN apt-get update && apt-get install -y postgresql-client && apt-get install -y postgresql
 
 # Set the working directory inside the container
 WORKDIR /csce431
@@ -18,6 +18,7 @@ COPY . .
 
 # Expose port 3000 for the Rails server
 EXPOSE 3000
+EXPOSE 5432
 
 # Default command when the container starts
 CMD ["bash"]
