@@ -12,6 +12,6 @@ Book.create!([
     { title: "1984", author: "George Orwell"},
     { title: "Pride and Prejudice" },
     { title: "The Catcher in the Rye"},
-    { title : "The Hobbit"},
-    { title : "Harry Potter and the Sorcerer's Stone"}
+    { title: "The Hobbit"},
+    { title: "Harry Potter and the Sorcerer's Stone"}
 ])
